@@ -1,15 +1,15 @@
 #!/bin/sh
-# This script installs LiveTerm.
+# This script installs my portfolio.
 #
-# Found a bug? Report it here: https://github.com/Cveinnt/LiveTerm/issues
+# Found a bug? Report it here: https://github.com/Zied310/my-portfolio/issues
 
 set -e -u
 
-eval "git clone 'https://github.com/Cveinnt/LiveTerm.git'"
+eval "git clone 'https://github.com/Zied310/my-portfolio.git'"
 
-cd LiveTerm
+cd my-portfolio
 
-echo "LiveTerm cloned! Installing dependencies..."
+echo "Portfolio cloned! Installing dependencies..."
 
 if command -v yarn >/dev/null 2>&1 ; then
   yarn install
@@ -34,20 +34,11 @@ fi
 cat <<-'EOM'
 
 
- █████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
-                                                                                
-
-LiveTerm has been downloaded to the current directory.
+                                                                            
+My portfolio has been downloaded to the current directory.
 You can start developing it with:
 
-cd LiveTerm && yarn dev
+cd my-portfolio && yarn dev
 
 This will open a local port at http://localhost:3000, 
 where you can preview your website. To apply changes, edit:
